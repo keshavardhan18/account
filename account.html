@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accounting Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Accounting Management System</h1>
+
+        <div class="form">
+            <input type="text" id="name" placeholder="Transaction Name">
+            <input type="number" id="amount" placeholder="Amount">
+
+            <select id="type">
+                <option value="Income">Income</option>
+                <option value="Expense">Expense</option>
+            </select>
+
+            <button onclick="addTransaction()">Add Transaction</button>
+        </div>
+
+        <h2>Transaction Records</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="records"></tbody>
+        </table>
+
+        <h2 id="balance">Balance: ₹0</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
